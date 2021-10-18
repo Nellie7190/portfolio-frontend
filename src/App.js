@@ -11,7 +11,7 @@ import Projects from './pages/Projects';
 
 function App() {
   //URL HEROKU for Backend
-  URL="https://proj-mock-portfolio.herokuapp.com/"
+  const URL="https://proj-mock-portfolio.herokuapp.com/";
 
   return (
     <div className="App">
