@@ -1,6 +1,12 @@
 import { useState, useEffect } from "react";
 
 const Projects = (props) => {
+    const imgStyle = {
+        width: "70%",
+        height: "70%",
+        border: "3px solid black",
+        margin: "auto",
+      };
     //state to hold projects
     const [projects, setProjects] = useState(null);
 
@@ -21,7 +27,8 @@ const Projects = (props) => {
         return projects.map((project) => (
             <div>
                 <h1>{project.name}</h1>
-                <img src={project.image} />
+                <img style={imgStyle} src={project.image} />
+                <br />
                 <a href={project.git}>
                     <button>Github</button>
                 </a>

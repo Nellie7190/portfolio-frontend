@@ -1,5 +1,22 @@
 const Footer = (props) => {
-    return <h1> Footer </h1>
+    //inline style for footer nav tag
+    const navStyle = {
+        display: "flex",
+        justifyContent: "space-around",
+        border: "3px solid black",
+        padding: "8px",
+        width: "90%",
+        margin: "auto",
+        backgroundColor: "grey"
+      };
+    return (
+        <>
+        <nav style={navStyle}>
+            <a target="#" href="https://github.com/Nellie7190/portfolio-frontend">GitHub</a>
+            <a target="#" href="https://www.linkedin.com/in/chanel-bosch-nyc/">linkedIn</a>
+            </nav>
+        </>
+    )
 };
 
 export default Footer;
