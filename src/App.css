@@ -35,11 +35,25 @@
   border-radius: 10%;
 }
 
+#resume {
+  align-items: center;
+  margin: 10px;
+  /* border: solid 1px black; */
+  filter: drop-shadow(3px 3px 5px grey);
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  #resume {
+    height: 1000px;
+    width: 700px;
   }
 }
