@@ -7,7 +7,7 @@ const About = (props) => {
     //function to make api call
     const getAboutData = async () => {
         //make api call and get response
-        const response = await fetch(props.URL + 'about');
+        const response = await fetch(props.URL);
         //turn response into JS object
         const data = await response.json();
         //set the about state to data
@@ -21,7 +21,8 @@ const About = (props) => {
     const loaded = () => {
         return (
         <div>
-            <h2>{about.name}</h2>
+            <img id="profile" src="https://media-exp1.licdn.com/dms/image/D4E35AQGlMG0PaQ1MFQ/profile-framedphoto-shrink_400_400/0/1638291556754?e=1638550800&v=beta&t=_Fo_IFKys5HDK1usI_KJgR_63wEqGYB0QR9Y51BUbqQ" alt="no image" />
+            <h2>{about.role}</h2>
             <h3>{about.email}</h3>
             <p>{about.bio}</p>
         </div>
