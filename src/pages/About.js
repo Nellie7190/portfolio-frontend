@@ -21,7 +21,7 @@ const About = (props) => {
     const loaded = () => {
         return (
         <div>
-            <img id="profile" src="https://media-exp1.licdn.com/dms/image/D4E35AQGlMG0PaQ1MFQ/profile-framedphoto-shrink_400_400/0/1638291556754?e=1638550800&v=beta&t=_Fo_IFKys5HDK1usI_KJgR_63wEqGYB0QR9Y51BUbqQ" alt="no image" />
+            <img id="profile" src={about.headshot} alt="no image" />
             <h2>{about.role}</h2>
             <h3>{about.email}</h3>
             <p>{about.bio}</p>
