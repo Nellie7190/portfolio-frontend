@@ -29,10 +29,10 @@ const Projects = (props) => {
                 <h1>{project.name}</h1>
                 <img style={imgStyle} src={project.image} />
                 <br />
-                <a href={project.git}>
+                <a href={project.git} target='#'>
                     <button>Github</button>
                 </a>
-                <a href={project.live}>
+                <a href={project.live} target='#'>
                     <button>live site</button>
                 </a>
             </div>
