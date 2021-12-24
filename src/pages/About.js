@@ -7,12 +7,12 @@ const Div = styled.div`
         border: solid 1px black;
         border-radius: 50%;
     }
-    // @media (max-width: 768px) {
-    //     #resume {
-    //       height: 800px;
-    //       width: 500px;
-    //     }
-    //   }
+    @media (max-width: 768px) {
+        #profile {
+          height: 600px;
+          width: 600px;
+        }
+      }
 `
 
 const About = (props) => {

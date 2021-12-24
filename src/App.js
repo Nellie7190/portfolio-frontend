@@ -1,4 +1,3 @@
-import './App.css';
 //COMPONENTS
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -7,7 +6,11 @@ import { Route, Switch } from 'react-router-dom';
 import Resume from './pages/Resume';
 import About from './pages/About';
 import Projects from './pages/Projects';
+import styled from 'styled-components';
 
+const Div = styled.div`
+    text-align: center;
+`
 
 function App() {
   //URL HEROKU for Backend
@@ -15,7 +18,7 @@ function App() {
   // const URL="http://localhost:4000/";
 
   return (
-    <div className="App">
+    <Div className="App">
       <Header />
       <Switch>
         <Route exact path="/">
@@ -29,7 +32,7 @@ function App() {
         </Route>
       </Switch>
       < Footer />
-    </div>
+    </Div>
   );
 }
 
