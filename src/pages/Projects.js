@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import styled from "styled-components";
+//work on
 
 const Projects = (props) => {
     const imgStyle = {
@@ -28,12 +30,13 @@ const Projects = (props) => {
             <div>
                 <h1>{project.name}</h1>
                 <img style={imgStyle} src={project.image} />
+                <p>{project.description}</p>
                 <br />
                 <a href={project.git} target='#'>
                     <button>Github</button>
                 </a>
                 <a href={project.live} target='#'>
-                    <button>live site</button>
+                    <button>Live Site</button>
                 </a>
             </div>
         ))

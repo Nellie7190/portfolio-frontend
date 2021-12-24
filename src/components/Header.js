@@ -1,21 +1,30 @@
 import { Link } from 'react-router-dom'
+import styled from 'styled-components'
+
+const Nav = styled.nav`
+  * {
+    width: 100%;
+    margin: auto;
+    justify-content: space-around;
+    background-color: skyblue;
+  }
+  h1 {
+    padding: 15px;
+  }
+  nav {
+    display: flex;
+  }
+  div {
+    border: 2px solid black;
+    padding: 10px;
+  }
+  `
 
 const Header = (props) => {
-    //inline style for the nav tag
-  const navStyle = {
-    display: "flex",
-    justifyContent: "space-around",
-    border: "3px solid black",
-    padding: "8px",
-    width: "90%",
-    margin: "auto",
-    backgroundColor: "grey"
-  };
-
   return (
-    <header>
-      <h1>My Portfolio Page</h1>
-      <nav style={navStyle}>
+    <Nav>
+      <h1>Hi, I'm Nellie 😃</h1>
+      <nav>
         <Link to="/">
           <div>ABOUT</div>
         </Link>
@@ -26,7 +35,7 @@ const Header = (props) => {
           <div>PROJECTS</div>
         </Link>
       </nav>
-    </header>
+    </Nav>
   );
 }
 

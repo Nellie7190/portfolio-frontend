@@ -1,4 +1,19 @@
 import { useState, useEffect } from "react";
+import styled from "styled-components";
+
+const Div = styled.div`
+    #profile {
+        margin: 10px;
+        border: solid 1px black;
+        border-radius: 50%;
+    }
+    // @media (max-width: 768px) {
+    //     #resume {
+    //       height: 800px;
+    //       width: 500px;
+    //     }
+    //   }
+`
 
 const About = (props) => {
     //state to hold data
@@ -20,12 +35,12 @@ const About = (props) => {
     //function that returns JSX needed when getting data
     const loaded = () => {
         return (
-        <div>
+        <Div>
             <img id="profile" src={about.headshot} alt="no image" />
             <h2>{about.role}</h2>
             <h3>{about.email}</h3>
             <p>{about.bio}</p>
-        </div>
+        </Div>
         )
     };
     return about ? loaded() : <h1>Loading...</h1>
